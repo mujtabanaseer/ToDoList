@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment To Do List</title>
+    <link rel="stylesheet" href="assets/cs/Index.css">
+</head>
+<body>
+<!--<script>-->
+<!--    function liveSearch(input) {-->
+<!--        const value = input.value;-->
+<!--        document.getElementById('output_search').innerText = value;-->
+<!--        let searching=document.getElementById()-->
+<!--        /*-->
+<!--        1. get table-->
+<!--        2. iterate on each row-->
+<!--        3. inner text-->
+<!--        4. if inner text equal  search query disply-->
+<!--        5. hide-->
+<!--         */-->
+<!--    }-->
+<!--</script>-->
+<section class="body_container">
+    <div class="todo_list_container">
+        <!-------------------project title or page heading---------------->
+        <h1 id="assignment_heading" class="assignment_heading"></h1>
+        <hr>
+        <!--------------------live display data of searching bar--------------------------->
+        <div class="output_search">
+            <span  id="output_search"></span>
+        </div>
+        <!----------------searching bar------------------------------------>
+        <div class="search_section">
+            <input type="search" placeholder="enter text for search" onkeyup="data()" class="search_bar"
+                   value="" id="search_bar">
+            <button type="submit" class="search_button" onclick="search()">Search</button>
+        </div>
+        <!------------------table of data------------------------------>
+        <div class="table_section">
+            <table border="2px">
+                <thead>
+                <tr>
+                    <td>Id</td>
+                    <td>Title</td>
+                    <td>Status</td>
+                    <td>Actions</td>
+                </tr>
+                </thead>
+                <!-----------table body-------->
+                <tbody id="tbody" ></tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+<script src="assets/js/Index.js"></script>
+</body>
+</html>
